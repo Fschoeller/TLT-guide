@@ -32,3 +32,5 @@ Segmentation fault (core dumped)
 ```
 
 Follow step 2 and 3 in [this](https://github.com/NVIDIA-AI-IOT/deepstream_tlt_apps/tree/master/TRT-OSS/Jetson/TRT7.1#3-replace-libnvinfer_pluginso) guide
+
+Detection FPS can be estimated using `trtexec`, e.g: `/usr/src/tensorrt/bin/trtexec --loadEngine=saved.engine --int8 --batch=1 --useSpinWait`
